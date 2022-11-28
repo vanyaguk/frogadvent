@@ -131,10 +131,10 @@ cursor: pointer;
     cursor: not-allowed;
 }
 .first {
-    background-image: url(../Assets/kartocnaa-igra-propustit-bo.jpg) !important;
+    background-image: url(/Assets/kartocnaa-igra-propustit-bo.jpg) !important;
 }
 .second {
-    background-image: url(../Assets/5-surprise-mini-brands-toy-surprise-ball-wave-2.jpg) !important;
+    background-image: url(/Assets/5-surprise-mini-brands-toy-surprise-ball-wave-2.jpg) !important;
 }
 .last {
     font-size: 36px;
