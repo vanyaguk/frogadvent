@@ -1,0 +1,142 @@
+body {
+    background-image: url(background.svg);
+    background-size: 1920px;
+    background-position: top;
+    background-position-x: center;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.logo {
+    margin: 25px;
+}
+
+canvas {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+}
+
+.active {
+   
+    background-image: url(3680.jpg);
+    background-size: 125%;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgba(255,255,255,0.5), 
+    0px 2px 4px rgba(255,255,255,0.5), 
+    0px 4px 8px rgba(255,255,255,0.5), 
+    0px 8px 16px rgba(255,255,255,0.5);
+}    
+.active:hover {
+    box-shadow: 0px 2px 4px rgba(255,255,255,0.7), 
+    0px 4px 8px rgba(255,255,255,0.7), 
+    0px 8px 16px rgba(255,255,255,0.7), 
+    0px 12px 24px rgba(255,255,255,0.7);
+transform: translateY(-10px);
+transition: 0.2s;
+cursor: pointer;
+}
+
+.gift {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 32px;
+    font-weight: bolder;
+    padding: 20px;
+}
+.unactive {
+    opacity: 0.3;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: not-allowed;
+}
+.first {
+    background-image: url(../Assets/kartocnaa-igra-propustit-bo.jpg) !important;
+}
+.second {
+    background-image: url(../Assets/5-surprise-mini-brands-toy-surprise-ball-wave-2.jpg) !important;
+}
+.last {
+    font-size: 36px;
+    color: rgb(187, 12, 12);
+}
