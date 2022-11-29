@@ -1,10 +1,14 @@
+html {
+    display: block;
+ 
+}
 body {
     background-image: url(background.svg);
-    background-size: 1920px;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: top;
     background-position-x: center;
     overflow: hidden;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,9 +30,11 @@ canvas {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 .overlay {
     position: fixed;
+    z-index: 10;
     top: 0;
     bottom: 0;
     left: 0;
@@ -75,6 +81,19 @@ canvas {
     max-height: 30%;
     overflow: auto;
   }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .popbutton {
+    padding: 20px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    margin: 30px;
+    width: 130px;
+    text-align: center;
+  }
   
   @media screen and (max-width: 700px){
     .box{
@@ -94,21 +113,23 @@ canvas {
 }
 
 .active {
-   
-    background-image: url(3680.jpg);
-    background-size: 125%;
+    
+        background-image: url(../Assets/firstdecemeber.png);
+    background-size: 65% !important;
+    background-position: center;
     background-color: white;
-    box-shadow: 0px 1px 2px rgba(255,255,255,0.5), 
-    0px 2px 4px rgba(255,255,255,0.5), 
-    0px 4px 8px rgba(255,255,255,0.5), 
-    0px 8px 16px rgba(255,255,255,0.5);
+   
+    box-shadow: -1px 1px 65px 16px rgba(255,255,255,0.75);
+-webkit-box-shadow: -1px 1px 65px 16px rgba(255,255,255,0.75);
+-moz-box-shadow: -1px 1px 65px 16px rgba(255,255,255,0.75);
 }    
 .active:hover {
-    box-shadow: 0px 2px 4px rgba(255,255,255,0.7), 
+    box-shadow: 0px 4px 8px rgba(255,255,255,0.7), 
     0px 4px 8px rgba(255,255,255,0.7), 
     0px 8px 16px rgba(255,255,255,0.7), 
     0px 12px 24px rgba(255,255,255,0.7);
 transform: translateY(-10px);
+transform: scale(105%);
 transition: 0.2s;
 cursor: pointer;
 }
@@ -122,6 +143,9 @@ cursor: pointer;
     font-size: 32px;
     font-weight: bolder;
     padding: 20px;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .unactive {
     opacity: 0.3;
@@ -131,12 +155,75 @@ cursor: pointer;
     cursor: not-allowed;
 }
 .first {
-    background-image: url(https://vanyaguk.github.io/frogadvent/Assets/kartocnaa-igra-propustit-bo.jpg) !important;
+background-image: url(../Assets/firstdecemeber.png) !important;
 }
 .second {
-    background-image: url(https://vanyaguk.github.io/frogadvent/Assets/5-surprise-mini-brands-toy-surprise-ball-wave-2.jpg) !important;
+    background-image: url(../Assets/5-surprise-mini-brands-toy-surprise-ball-wave-2.jpg) !important;
 }
 .last {
     font-size: 36px;
+    text-align: center;
     color: rgb(187, 12, 12);
 }
+.gift {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+}
+
+.imgact {
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    margin: -20px;
+    background-repeat: no-repeat;
+    background-image: url(../3680.png);
+    background-size: 125%;
+    border-radius: 10px;
+    background-position: initial;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .gift , .imgact {
+        width: 70px;
+        height: 70px;
+        margin: 5px;
+        font-size: 25px;
+        padding: 5px;
+    }
+    .grid {
+        width: 97%;
+    }
+    body {
+        background-size: 400%;
+    }
+    .second {
+
+    }
+    .imgact {
+        padding: 5px;
+        margin: -5px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) and (min-width: 768px) {
+    .gift , .imgact {
+        width: 10vw;
+        height: 10vw;
+        margin: 1vw;
+        font-size: 25px;
+        padding: 1vw;
+    }
+    .grid {
+        width: 90vw;
+    }
+    body {
+        background-size: 400%;
+    }
+    .second {
+
+    }
+    .imgact {
+        padding: 1vw;
+        margin: -1vw;
+    }
+  }
