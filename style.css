@@ -1,6 +1,5 @@
 html {
     display: block;
- 
 }
 body {
     background-image: url(background.svg);
@@ -15,6 +14,7 @@ body {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+    cursor: url(cursoradvent.png), auto;
 }
 a {
     text-decoration: none;
@@ -66,10 +66,10 @@ canvas {
   }
   .popup .close {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 15px;
+    right: 20px;
     transition: all 200ms;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     text-decoration: none;
     color: #333;
@@ -93,6 +93,21 @@ canvas {
     margin: 30px;
     width: 130px;
     text-align: center;
+  }
+  .backbut {
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    padding: 15px;
+    font-weight: 500;
+    background-color: rgb(238, 238, 238);
+    margin: 30px;
+    width: 130px;
+    text-align: center;
+    border-radius: 30px;
+  }
+  .politika {
+    color: white;
   }
   
   @media screen and (max-width: 700px){
@@ -118,7 +133,7 @@ canvas {
     background-size: 65% !important;
     background-position: center;
     background-color: white;
-   
+    cursor: url(cursorpointer.png), pointer;
     box-shadow: -1px 1px 65px 16px rgba(255,255,255,0.75);
 -webkit-box-shadow: -1px 1px 65px 16px rgba(255,255,255,0.75);
 -moz-box-shadow: -1px 1px 65px 16px rgba(255,255,255,0.75);
@@ -128,10 +143,24 @@ canvas {
     0px 4px 8px rgba(255,255,255,0.7), 
     0px 8px 16px rgba(255,255,255,0.7), 
     0px 12px 24px rgba(255,255,255,0.7);
-transform: translateY(-10px);
-transform: scale(105%);
+transform: translateY(-10px) !important;
+transform: scale(110%) !important;
 transition: 0.2s;
-cursor: pointer;
+animation: gift 4s;
+}
+a {
+  cursor: url(cursorpointer.png), pointer;
+}
+@keyframes gift {
+  1% {
+    rotate: 0deg;
+  }
+  30% {
+    rotate: -10deg;
+  }
+  70% {
+    rotate: 10deg;
+  }
 }
 
 .gift {
@@ -146,7 +175,14 @@ cursor: pointer;
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
+
 }
+.gift:hover {
+transform: scale(95%);
+transition: 0.2s;
+}
+
 .unactive {
     opacity: 0.3;
     background-size: 60%;
@@ -158,12 +194,243 @@ cursor: pointer;
 background-image: url(firstdecemeber.png) !important;
 }
 .second {
-    background-image: url(5-surprise-mini-brands-toy-surprise-ball-wave-2.jpg) !important;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-image: url(philips-50pus9006-50-smart-android-4k-ultra-hd-led-tv.jpg) !important;
+} 
+.third {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url(dreame-v12-pro-bagless-05-l-650-w-grey.jpg) !important;
+} 
+.four {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url(5eur-voucher.jpg) !important;
+} 
+.five {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url(5eur-voucher.jpg) !important;
 }
+.six {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-image: url(stiga-vector-logo.png) !important;
+}
+.seven {
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-image: url(stiga-vector-logo.png) !important;
+}
+.eight {
+  -webkit-filter: blur(7px);
+  -moz-filter: blur(7px);
+  -o-filter: blur(7px);
+  -ms-filter: blur(7px);
+  filter: blur(7px);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-image: url(magic-mixies-cauldron-interactive-figure-pin.jpg) !important;
+}
+.nine {
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url(dpd-voucher.jpg) !important;
+}
+.ten {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url() !important;
+}
+.eleven {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url() !important;
+}
+.twelve {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url() !important;
+}
+.onethree {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url() !important;
+}
+.onefour {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url() !important;
+}
+.onefive {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url() !important;
+}
+.onesix {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url() !important;
+}
+.oneseven {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url() !important;
+}
+.oneeight {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url() !important;
+}
+.onenine {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url() !important;
+}
+.twelve {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url() !important;
+}
+.twoone {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url() !important;
+}
+.twotwo {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background:   linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9)), url(fireworksheader3.jpg) !important;
+}
+.twothree {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-image: url() !important;
+}
+
+
 .last {
-    font-size: 36px;
-    text-align: center;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+    font-size: 26px;
+    text-align: left;
     color: rgb(187, 12, 12);
+    box-shadow: 0px 4px 8px rgba(187, 12, 12, 0.1), 
+    0px 4px 8px rgba(187, 12, 12, 0.1), 
+    0px 8px 16px rgba(187, 12, 12, 0.1), 
+    0px 12px 24px rgba(187, 12, 12, 0.1);
+    background-size: 30%;
+  background-repeat: no-repeat;
+  background-image: url(5a3698c63984d0.1678720715135274942356.png) !important;
 }
 .gift {
     text-shadow: 0 0 5px rgba(255, 255, 255, 1);
